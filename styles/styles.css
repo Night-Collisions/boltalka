@@ -1,5 +1,5 @@
 html {
-    background: cadetblue;
+    background:  #eee;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -13,27 +13,35 @@ html {
 
 header{
     height: 75px;
-    background: bisque;
+    background: #eee;
 }
 
+footer{
+    height: 75px;
+    background: #0B93F6;
+}
 .l-wrap {
-    background: burlywood;
+    background: #eee;
     padding-bottom: 20px;
     padding-top: 20px; 
     height: 100%;
 }
 
 .main_container {
-    background: crimson;
-    height: 100%;
+    background: #e1e1e1;
+    height: 750px;
     margin: auto; 
     width: 760px;
     box-shadow: 10px 10px 23px -2px rgba(0,0,0,0.63);
 }
 
+.main_container > p{
+    text-align: center;
+}
+
 .main_container > section {
-    padding-top: 10px;
-    background: bisque;
+    padding: 5px;
+    background: white;
     height: 500px;
 }
 
