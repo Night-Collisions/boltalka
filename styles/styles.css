@@ -83,6 +83,12 @@ footer{
     float: left;
 }
 
+.main_container img {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
 .clear {
     clear: both;
 }
