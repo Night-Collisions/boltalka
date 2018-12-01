@@ -32,6 +32,7 @@ header{
 }
 
 .main_container > section {
+    padding-top: 10px;
     background: bisque;
     height: 500px;
 }
