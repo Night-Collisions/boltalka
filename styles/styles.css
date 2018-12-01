@@ -17,22 +17,26 @@ header{
 }
 
 footer{
-    height: 75px;
+    bottom: 0;
+    height: 100%;
     background: #0B93F6;
 }
 .l-wrap {
     background: #eee;
     padding-bottom: 20px;
-    padding-top: 20px; 
+    padding-top: 20px;
+    min-height: 575px;
     height: 100%;
 }
 
 .main_container {
+    border-radius: 5px;
     background: #e1e1e1;
-    height: 750px;
+    height: 575px;
     margin: auto; 
-    width: 760px;
+    width: 50%;
     box-shadow: 10px 10px 23px -2px rgba(0,0,0,0.63);
+    min-width: 400px;
 }
 
 .main_container > p{
@@ -85,10 +89,16 @@ footer{
 }
 
 .text_users_message {
-    width: 90%;
+    border-bottom-left-radius: 5px;
+    width: 80%;
+    margin: 0;
+    padding: 0;
 }
 
 .send_message_button {
+    margin: 0;
+    padding: 0;
     background-color: #eee;
-    width: 9%;
+    width: 20%;
+    float: right;
 }
