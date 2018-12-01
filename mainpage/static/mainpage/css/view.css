@@ -1,0 +1,14 @@
+@media screen and (min-height: 750px) and (max-width: 610px){
+    .l-wrap {
+        padding: 7%;
+        padding-top: 25%;
+    }
+}
+
+@media screen and (min-width: 610px) and (min-height: 750px){
+    .l-wrap {
+        padding: 7%;
+        padding-top: 150px;
+    }
+}
+
