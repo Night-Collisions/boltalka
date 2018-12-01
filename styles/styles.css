@@ -18,13 +18,49 @@ header{
 
 .l-wrap {
     background: burlywood;
+    padding-bottom: 20px;
+    padding-top: 20px; 
     height: 100%;
 }
 
 .main_container {
     background: crimson;
     height: 100%;
-    margin: auto;
+    margin: auto; 
     width: 760px;
     box-shadow: 10px 10px 23px -2px rgba(0,0,0,0.63);
+}
+
+.main_container > section {
+    background: bisque;
+    height: 500px;
+}
+
+.main_container > section > div{
+    max-width: 255px;
+    word-wrap: break-word;
+    margin-bottom: 12px;
+    line-height: 24px;
+}
+
+.bot_mess{
+    position: relative;
+    padding: 10px 20px;
+    color: white; 
+    background: #0B93F6;
+    border-radius: 25px;
+    float: right;
+}
+
+.user_mess{
+    position:relative;
+    padding:10px 20px;
+    background:#E5E5EA;
+    border-radius:25px;
+    color: black;
+    float: left;
+}
+
+.clear {
+    clear: both;
 }
