@@ -97,7 +97,21 @@ footer{
 .send_message_button {
     margin: 0;
     padding: 0;
-    background-color: #eee;
     width: 20%;
     float: right;
+    border-radius: 0 0 7px 0;
+    -webkit-border-radius: 0 0 7px 0;
+    -moz-border-radius: 0 0 7px 0;
+    font-size: 18px;
+    background-color: #17A8EE;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
 }
+
+.send_message_button:active{
+    color: #FFFFFF;
+    background-color: #0A364C;
+}
+
+
