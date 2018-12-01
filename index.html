@@ -14,21 +14,46 @@
 <div class="l-wrap">
     <div class="main_container">
         <p>POLKA-DOT BOLTALKA ver 0.1</p>
-        <section>
-            <div class="bot_mess">Ты пидор!</div>
+        <section id='main'>
             <div class="clear"></div>
-            <div class="user_mess">Нет ты!</div>
-            <div class="clear"></div>
-            <div class="bot_mess">Нет ты! Т. к. ты огромный сука узбек!</div>
-            <div class="clear"></div>
-            <div class="bot_mess">Нееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееетттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттт</div>
+            <div class="bot_mess">Неееетттттттттттттттттттттттттттттттттттттттттт</div>
             <div class="clear"></div>
         </section>
-        <input type="text" name="user_message" class="text_users_message">
-        <input type="button" name="send_message" class="send_message_button" value="send">
+        <input type="text" id="user_message" class="text_users_message">
+        <input type="button" id="send_message" class="send_message_button" value="send" onClick="new_message();">
     </div>
 </div>
 
+<script>
+    var parent = document.getElementById('main');
+
+    function new_message() {
+        let msg = document.getElementById('user_message').value;
+        if (msg === '')
+            return;
+        if (parent.children.length > 1000) {
+            parent.removeChild(parent.firstChild);
+            parent.removeChild(parent.firstChild);
+        }
+        var div = document.createElement('div');
+        div.className = "bot_mess";
+        div.innerHTML = msg;
+        parent.appendChild(div);
+        var cl = document.createElement('div');
+        cl.className = "clear";
+        parent.appendChild(cl);
+        document.getElementById('user_message').value = '';
+        parent.scrollTop = 9999;
+    }
+
+    document.body.onkeypress = handle;
+
+    function handle(e) {
+        if (e.keyCode === 13) {
+            document.getElementById('send_message').click();
+        }
+    }
+</script>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
